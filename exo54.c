@@ -17,5 +17,6 @@ for(i=0;i<5;i++)
    printf("%d ",T[i]);
 puts("");
 printf("Le maximum est : %d\n",max);
+puts("Fin du programme");
 return 0;
 }
