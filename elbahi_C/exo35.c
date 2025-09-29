@@ -18,9 +18,9 @@ int main(){
     puts("");  
     if(ndiv==2)
     {
-        printf("%d est un nombre premier car n_diviseur =%d\n",nbr,ndiv);
+        printf("%d est un nombre premier car N_diviseur = %d\n",nbr,ndiv);
     }
     else
-        printf("%d n'est pas un nombre premier car N_diviseur =%d\n",nbr,ndiv);
+        printf("%d n'est pas un nombre premier car N_diviseur = %d\n",nbr,ndiv);
     return 0;
 }
