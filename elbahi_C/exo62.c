@@ -1,30 +1,39 @@
 #include<stdio.h>
 int main(){
-    int T[7]={1,2,3,4,5};
-    int n=5,position,element;
-    printf("Entrer la position d'insertion (0 a %d): ",n-1);
+    int taille_tot=100;
+    int z,i;
+printf("Entrer la taille du tableau : ");
+scanf("%d",&z);
+    int T[z],position,element;
+puts("Remplissage du tableau");
+for(i=0;i<z;i++){
+printf("T[%d]:",i);
+scanf("%d",&T[i]);
+}
+    printf("Entrer la position d'insertion (0 a %d): ",z-1);
     scanf("%d",&position);
-    if(position<0 || position>n){
+    if(position<0 || position>z){
         printf("Position invalide!\n");
         return 1;
     }
     printf("Entrer l'element a inserer: ");
     scanf("%d",&element);
     puts("Avant insertion:");
-    for(int i=0;i<n;i++){
+    for( i=0;i<z;i++){
         printf("%d ",T[i]);
     }
-    for(int i=n;i>position;i--){
+    for( i=z;i>position;i--){
         T[i]=T[i-1];
     }
     T[position]=element;
-    n++;
+    z++;
     puts("\nApres insertion:");
-    for(int i=0;i<n;i++){
+    for( i=0;i<z;i++){
         printf("%d ",T[i]);
     }
     puts("");
     return 0;
+}
     /*
     //autre methode
     #include <stdio.h>
@@ -54,6 +63,6 @@ int main() {
     for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
     return 0;
-}
-    */
-}
+*/
+
+
