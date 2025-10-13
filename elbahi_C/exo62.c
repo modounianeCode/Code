@@ -12,7 +12,7 @@ scanf("%d",&T[i]);
 }
     printf("Entrer la position d'insertion (0 a %d): ",z-1);
     scanf("%d",&position);
-    if(position<0 || position>z){
+    if(position<0 || position > z){
         printf("Position invalide!\n");
         return 1;
     }
