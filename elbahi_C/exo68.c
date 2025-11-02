@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-//trier les elements du tableau dans l'ordre croissant
+//trier les elements du tableau dans l'ordre decroissant
 int T[]={25,14,20,-2,100,-10,40};
 int length,i,j,tmp;
 length=sizeof(T)/sizeof(T[0]);

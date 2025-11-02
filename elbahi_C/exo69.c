@@ -9,7 +9,7 @@ return 0;
 }
 void table_multiplication(int nbr){
 int i;
-printf("La table de multiplication de %d est :\n",nbr);
+printf("table %d \n",nbr);
 for(i = 0;i <= 10;i++){
 printf("%d * %d = %d\n",nbr,i,nbr*i);
 }

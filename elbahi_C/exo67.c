@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
 //trier les elements du tableau dans l'ordre croissant
-int T[]={25,14,20,-2,100,-10,40};
+int T[]={2850,2950,3050,2880,2755,2710,2890,3130,2940,3325,2920,2880};
 int length,i,j,tmp;
 length=sizeof(T)/sizeof(T[0]);
 for ( i = 0; i < length; i++)
