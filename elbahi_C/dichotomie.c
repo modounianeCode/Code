@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
-/*
 // complexite algorithmique de la recherche dichotomique
 void rechercher(int taille,int tab[],int elt){
     int g = 0, d = taille - 1, m ;
     do
     {
         m = ( g + d ) / 2;
+        printf("g=%d d=%d m=%d\n",g,d,m);
         if ( elt < tab[m])
         {
             d = m-1;
@@ -18,21 +18,21 @@ void rechercher(int taille,int tab[],int elt){
     } while (tab[m]!= elt && g <= d);
     if ( tab[m] == elt)
     {
-        printf("L'element existe\n");
+        printf("L'element existe dans le tableau et est a la position %d\n",m);
     }
     else
-        printf("L'element n'existe pas\n");
-
-     
+        printf("L'element n'existe pas dans le tableau\n");
 }
 int main(){
     int T[]={1,2,7,10,18,19};
     int n = sizeof(T)/sizeof(T[0]);
-    int elt=8;
+    int elt;
+    printf("Entrer l'element a rechercher : ");
+    scanf("%d",&elt);
     rechercher(n,T,elt);
     return 0;
 }
-*/
+/*
 void maximum(int *a, int *b, int *c){
     if (*a > *b)
     {
@@ -51,3 +51,4 @@ int main(){
     printf("Le maximum est : %d\n", c);
     return 0;
 }
+    */
