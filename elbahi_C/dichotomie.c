@@ -2,11 +2,13 @@
 #include<stdlib.h>
 // complexite algorithmique de la recherche dichotomique
 void rechercher(int taille,int tab[],int elt){
-    int g = 0, d = taille - 1, m ;
+    int g = 0, d = taille - 1, m ,cpt = 0;
     do
     {
         m = ( g + d ) / 2;
-        printf("g=%d d=%d m=%d\n",g,d,m);
+        cpt++;
+        printf("cpt=%d ",cpt);
+        //printf("g=%d d=%d m=%d\n",g,d,m);
         if ( elt < tab[m])
         {
             d = m-1;
