@@ -6,7 +6,7 @@ int *tab(int tableau1[], int Tableau2[], int taille);
 int taille(int tableau1[], int Tableau2[], int taille);
 void doublon(int tab_origine[],int *tab_compare,int size,int newsize);
 int main(){
-    int T1[] = {1,2,1,4,5,6};
+    int T1[] = {1,2,9,4,5,6};
     int T2[] = {1,9,8,2,3,6};
     int size = sizeof(T1)/sizeof(T1[0]);
     puts("Affichage du premier tableau");
