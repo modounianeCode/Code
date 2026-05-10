@@ -1,7 +1,7 @@
 #include<stdio.h>
-#include<stdlib.h>
 void moitie(int nombre){
     nombre = nombre / 2;
+    printf("%d\n",nombre);
 }
 int main(){
     int nombre = 10;

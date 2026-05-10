@@ -21,7 +21,7 @@ void remplir(int tab[][],int n,int m){
         for ( j = 0; j < m; j++)
         {
             printf("mat[%d][%d]:",i,j);
-            scanf("%d",&tab[i][j]);
+            // scanf("%d",&tab[i][j]);
         }
         
     }

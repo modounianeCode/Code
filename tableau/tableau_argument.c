@@ -8,7 +8,7 @@ void nombresPaires(int *tab,int n){
     }
 }
 int main(){
-    int tab[] = {15, 25, 30, 45, 56};
+    int tab[] = {15, 25, 30, 45, 57};
     int size = sizeof(tab) / sizeof(tab[0]);
     nombresPaires(tab, size);
     return 0;

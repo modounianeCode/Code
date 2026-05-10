@@ -25,9 +25,36 @@ void rechercher(int taille,int tab[],int elt){
     else
         printf("L'element n'existe pas dans le tableau\n");
 }
+void trier(int count,int tab[]){
+    for (int i = 0; i < count-1; i++)
+    {
+        for (int j = 0; j < count; j++)
+        {
+            if(tab[j+1] < tab[j]){
+                swap(tab[j],tab[j+1]);
+            }
+        }
+        
+    }
+    
+}
+void swap(int a,int b){
+int tmp=a;
+    a=b;
+    b=tmp;
+}
+void display(int count,int tab[]){
+    for ( int i = 0; i < count; i++)
+    {
+        printf("%d |",tab[i]);
+    }
+    puts("");
+}
 int main(){
-    int T[]={1,2,7,10,18,19};
+    int T[]={1,-1,7,-2};
     int n = sizeof(T)/sizeof(T[0]);
+    trier(n,T);
+    display(n,T);
     int elt;
     printf("Entrer l'element a rechercher : ");
     scanf("%d",&elt);

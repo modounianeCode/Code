@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     printf("%d\n", incremente());
     printf("%d\n", incremente());
     printf("%d\n", incremente());
-    printf("%d\n", incremente() + 10);
+    printf("%d\n", incremente());
     printf("%d\n", incremente());
     return 0;
 }

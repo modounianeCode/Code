@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 void moitie(int *nombre){
     *nombre = *nombre / 2;
 }
