@@ -1,1 +1,0 @@
-void modifier(int *n);
